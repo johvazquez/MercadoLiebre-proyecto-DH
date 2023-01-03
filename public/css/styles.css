@@ -1,0 +1,432 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+
+
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #ebebeb;
+}
+
+main {
+    max-width: 90%;
+
+}
+
+.main-header {
+    background-color: #EAC926;
+    padding: 6px;
+
+
+}
+
+img {
+    width: 100%;
+
+}
+
+.contenedor-busqueda {
+    max-width: 50%;
+    display: flex;
+}
+
+.contenedor-busqueda input {
+    max-width: 75%;
+}
+
+.contenedor-busqueda button,
+.contenedor-busqueda input {
+    height: 50%;
+    padding: 5px;
+}
+
+
+.copy-header {
+    margin-top: 5px;
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.hamburguer-button {
+    background-color: #03264c;
+    color: white;
+    display: block;
+    max-width: 50px;
+    padding: 15px 0;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 18px;
+    margin: auto;
+}
+
+.main-navbar {
+    display: none;
+}
+
+.main-navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.main-navbar a h3 {
+    text-decoration: none;
+    color: #222222;
+    display: inline-block;
+    padding: 5px 0;
+    font-size: 17px;
+
+}
+
+.main-header-top-bar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+}
+
+.main-header-top-bar img,
+.main-header-top-bar form {
+    max-width: 48%;
+
+}
+
+.header-top p {
+    margin: 0 auto;
+}
+
+.product {
+    padding: 0px 15px;
+    position: relative;
+    margin: 10px 0px;
+
+}
+
+.product img {
+    width: 100%;
+}
+
+.product:hover h3 {
+    opacity: 1;
+    background-color: rgba(0, 0, 0, 1);
+}
+
+.product h3 {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    margin: 0;
+    padding: 36px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: all 450ms;
+}
+
+article div.main-article {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    border-top: 1px solid #ebebeb;
+    padding: 15px;
+}
+
+.price {
+    width: 30%;
+    font-size: 18px;
+
+}
+
+
+
+
+
+.discount,
+.description {
+    font-size: 16px;
+    font-weight: normal;
+    padding-left: 15px;
+    padding-top: 2px;
+
+}
+
+h2,
+.description {
+    color: #666;
+}
+
+.description-container {
+    height: 0;
+    opacity: 0;
+}
+
+.description {
+    display: none;
+    margin-top: 20px;
+}
+
+
+
+main {
+    width: 90%;
+    margin: 0 auto;
+}
+
+main section article {
+    background-color: #fff;
+    margin: 10px 0px;
+}
+
+main section article img {
+    width: 100%;
+}
+
+main section article i {
+    display: block;
+    font-size: 16 px;
+    padding: 5 px;
+    width: 30 px;
+    height: 30 px;
+    border: 1 px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 20 px;
+    top: -15 px;
+}
+
+main section article i,
+.discount {
+    width: 70%;
+    color: #39b54a;
+}
+
+.truck-icon {
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+}
+
+main section h2 {
+    margin: 20px 0px;
+}
+
+header ul {
+    margin-bottom: 16px;
+}
+
+main.login form #txfUser:invalid {
+    border: 1px solid red;
+}
+
+
+.subtitulo {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+}
+
+#lista li a {
+    font-size: 12px;
+    font-family: 'Roboto', sans-serif;
+    text-align: left;
+    text-decoration: none;
+
+}
+
+/* Phone */
+@media (min-width:360px) {
+    main section article .description {
+        display: block;
+    }
+
+    main section article {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+}
+
+
+
+
+
+/* Tablet */
+@media (min-width:361px) {
+    .main-header-top-bar {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 0;
+        max-width: 100%;
+
+    }
+
+    .contenedor-busqueda {
+        width: 30%;
+        padding: 0px 0px 0px 12px;
+    }
+
+    .logo {
+
+        width: 33%;
+    }
+
+    .copy-header {
+        max-width: 30%;
+        font-size: 12px;
+    }
+
+    .copy-header {
+        max-width: 350px;
+        text-align: center;
+        align-items: center;
+
+    }
+
+    .hamburguer-button {
+        display: none;
+    }
+
+    .main-navbar {
+        display: flex;
+        justify-content: space-between;
+        max-width: 100%;
+        font-size: 12px;
+        flex-basis: 40%;
+
+    }
+
+    .main-navbar ul {
+        display: flex;
+
+    }
+
+    .main-navbar li {
+        margin: 0 5px;
+        padding: 2px;
+
+    }
+
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        padding: 5px 0;
+        font-size: 12px;
+    }
+
+    .main-navbar a {
+        font-size: 14px;
+    }
+
+    main section article .description {
+        display: block;
+    }
+    main section article {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+
+    main section .elements-to-sell {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 16px;
+        justify-content: center;
+    }
+
+    main section .elements-to-sell article {
+        width: 48%;
+    }
+
+}
+
+
+
+/* Desktop */
+@media (min-width: 769px) {
+
+    .main-header-top-bar,
+    .main-navbar {
+        max-width: 1200px;
+        margin: auto;
+    }
+
+    .main-header-top-bar {
+        align-items: center;
+
+    }
+
+    .main-navbar li {
+        margin: 0 10px;
+    }
+
+    .main-navbar a {
+        font-size: 19px;
+    }
+
+    .main-navbar {
+        margin-top: 30px;
+    }
+
+    .copy-header {
+        margin: 0;
+        max-width: none;
+        font-size: 18px;
+        font-weight: 400px;
+    }
+
+    .logo {
+        width: 250px;
+    }
+
+    main section .elements-to-sell .product {
+        width: 24%;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+footer {
+    font-size: 12px;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    text-decoration: none;
+}
+
+.logo {
+    width: 200px;
+    animation: aumentar 1s linear 2 alternate;
+}
+
+@keyframes aumentar {
+    0% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(1.5);
+    }
+}
