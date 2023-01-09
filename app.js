@@ -6,7 +6,7 @@ const app = express();
 app.use(express.static('public'));
 
 app.get("/", (req, res) =>{
-    res.sendFile(path.join(__dirname, "/views/home.html"))
+    res.sendFile(path.join(__dirname, "/views/home.html"));
 } );
 
 app.get("/register", (req, res) => {
@@ -18,8 +18,7 @@ app.get("/login", (req, res) => {
 });
 
 
-
-const port = process.env.PORT || 3030;
+const port = process.env.PORT || 3001;
 app.listen(port, () => {
     console.log('Servidor iniciado en http://localhost:' + port);
 });

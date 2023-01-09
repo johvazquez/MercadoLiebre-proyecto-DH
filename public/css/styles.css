@@ -118,6 +118,11 @@ img {
     background-color: rgba(0, 0, 0, 1);
 }
 
+.logo {
+    width: 200px;
+    animation: aumentar 1s linear 2 alternate;
+}
+
 .product h3 {
     background-color: rgba(0, 0, 0, 0.5);
     color: #fff;
@@ -296,7 +301,7 @@ main.login form #txfUser:invalid {
     padding: 5px 10px;
     border-radius: 5px;
 
-}
+    }
 
 
 
@@ -409,6 +414,13 @@ main.login form #txfUser:invalid {
     footer .information-footer article{
         width: 48%;
     }
+
+    .discount, .description {
+        font-size: 16px;
+        font-weight: normal;
+        padding-left: 40px;
+        padding-top: 2px;
+    }
     
 
 }
@@ -513,10 +525,7 @@ footer {
     margin: auto;
 }
 
-.logo {
-    width: 200px;
-    animation: aumentar 1s linear 2 alternate;
-}
+
 .copyright{
     text-align: left;
     font-size: 10px;
