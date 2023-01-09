@@ -9,6 +9,8 @@
 body {
     font-family: 'Roboto', sans-serif;
     background-color: #ebebeb;
+    font-size: 12px
+
 }
 
 main {
@@ -227,6 +229,7 @@ main section article i,
 
 main section h2 {
     margin: 20px 0px;
+    font-size: 24px;
 }
 
 header ul {
@@ -252,6 +255,10 @@ main.login form #txfUser:invalid {
 
 }
 
+.information-footer{
+    text-align: justify center;
+}
+
 /* Phone */
 @media (min-width:360px) {
     main section article .description {
@@ -261,6 +268,34 @@ main.login form #txfUser:invalid {
     main section article {
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
     }
+}
+
+.create-form{
+    padding: 20px 15px;
+}
+
+.control-formulario{
+    margin-bottom: 15px;
+    
+}
+
+.control-formulario label{
+    margin-bottom: 5px;
+    display: block ;
+}
+
+.control{
+    width: 100%;
+    padding: 8px 8px;
+}
+
+.boton-formulario{
+    background-color: #1259c3;
+    color:#fff;
+    font-size: 20px;
+    padding: 5px 10px;
+    border-radius: 5px;
+
 }
 
 
@@ -353,6 +388,28 @@ main.login form #txfUser:invalid {
     main section .elements-to-sell article {
         width: 48%;
     }
+    main section .elements-to-offers {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 16px;
+        justify-content: center;
+    }
+
+    main section .elements-to-offers article {
+        width: 48%;
+    }
+
+    footer .information-footer{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 16px;
+        justify-content: center;
+    }
+
+    footer .information-footer article{
+        width: 48%;
+    }
+    
 
 }
 
@@ -395,8 +452,38 @@ main.login form #txfUser:invalid {
         width: 250px;
     }
 
-    main section .elements-to-sell .product {
+    main section .elements-to-offers .product {
         width: 24%;
+    }
+    main section .elements-to-sell {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 16px;
+        justify-content: center;
+    }
+
+    main section .elements-to-offers article {
+        width: 48%;
+    }
+    main section .elements-to-sell {
+        display: flex;
+        flex-wrap: nowrap;
+        gap: 16px;
+        justify-content: center;
+    }
+
+    main section .elements-to-sell article {
+        width: 48%;
+    }
+    main section .elements-to-offers {
+        display: flex;
+        flex-wrap: nowrap;
+        gap: 16px;
+        justify-content: center;
+    }
+
+    main section .elements-to-offers .detalle-footer {
+        width: 48%;
     }
 
 }
@@ -415,11 +502,27 @@ footer {
     text-align: center;
     text-decoration: none;
 }
+.information-footer{
+    color: #03264c;
+    display: block;
+    max-width: 2em;
+    padding: 8px 0;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 18px;
+    margin: auto;
+}
 
 .logo {
     width: 200px;
     animation: aumentar 1s linear 2 alternate;
 }
+.copyright{
+    text-align: left;
+    font-size: 10px;
+    padding: 0px 10px 10px 10px;
+}
+
 
 @keyframes aumentar {
     0% {
